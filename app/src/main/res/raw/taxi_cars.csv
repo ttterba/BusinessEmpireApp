@@ -1,0 +1,14 @@
+Renolt Logon,10800,cars_renolt_logon,TaxiCategories.ECONOMY,520000
+Hendaji Solaer,12262,cars_hendaji_solaer,TaxiCategories.ECONOMY,480000
+Vada Grand,7853,cars_vada_grand,TaxiCategories.ECONOMY,300000
+Skotta Octavian,22246,cars_skotta_octavian,TaxiCategories.COMFORT,420000
+Hendaji Elintra,20171,cars_hendaji_elintra,TaxiCategories.COMFORT,390000
+Toyoda Samry,29375,cars_toyoda_samry,TaxiCategories.COMFORT_PLUS,415000
+Hendaji Sontair,26302,cars_hendaji_sontair,TaxiCategories.COMFORT_PLUS,410000
+Marcedes-Benc E-class,66000,cars_marcedes_benc_e_class,TaxiCategories.BUSINESS,460000
+DMW 5,62002,cars_dmw_5,TaxiCategories.BUSINESS,450000
+Auddi A6,57869,cars_auddi_a6,TaxiCategories.BUSINESS,440000
+Marcedes-Benc S-class,137783,cars_marcedes_benc_s_class,TaxiCategories.PREMIER,305000
+DMW 7,124005,cars_dmw_7,TaxiCategories.PREMIER,300000
+Auddi A8,122274,cars_auddi_a8,TaxiCategories.PREMIER,298000
+Marcedes-Maybech S-class,262000,cars_marcedes_meybach_s_class,TaxiCategories.ELITE,600000

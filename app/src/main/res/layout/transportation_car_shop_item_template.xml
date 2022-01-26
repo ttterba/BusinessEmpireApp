@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_marginStart="0dp"
+    android:layout_marginEnd="0dp"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#F3F3F3"
+    app:rippleColor="#F3A683">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="15dp"
+            tools:text="Merceds-Maybach S-Class"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_semibold"/>
+
+        <ImageView
+            android:id="@+id/car_image"
+            android:layout_width="120dp"
+            android:layout_height="70dp"
+            android:src="@drawable/cars_marcedes_meybach_s_class"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_marginTop="10dp"/>
+
+        <TextView
+            android:id="@+id/text_per_hour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/car_image"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:text="@string/type"
+            android:textSize="13sp"
+            android:textColor="#858585"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvCategory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_per_hour"
+            app:layout_constraintBottom_toBottomOf="@id/text_per_hour"
+            tools:text="Комфорт+"
+            android:textSize="13sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/text_mileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_per_hour"
+            app:layout_constraintTop_toBottomOf="@id/text_per_hour"
+            android:text="@string/max_mileage"
+            android:textSize="13sp"
+            android:textColor="#858585"
+            android:fontFamily="@font/inter_regular"
+            android:layout_marginTop="3dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvMaxMileage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@id/text_mileage"
+            app:layout_constraintBottom_toBottomOf="@id/text_mileage"
+            tools:text="610 000 км."
+            android:textSize="13sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_medium"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/tvPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/text_mileage"
+            app:layout_constraintTop_toBottomOf="@id/text_mileage"
+            app:layout_constraintBottom_toBottomOf="parent"
+            tools:text="$ 124 804"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_semibold"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="10dp"
+            android:visibility="visible"/>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

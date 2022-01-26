@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Widget.BottomNavigationView"
+        parent="Widget.Design.BottomNavigationView">
+        <item name="fontFamily">@font/robotocondensed_light</item>
+    </style>
+
+    <style name="SplashTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@drawable/splash_screen</item>
+    </style>
+
+    <style name="BankBalanceCard">
+        <item name="android:background">@drawable/layout_bank_card_bg</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">116dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:layout_marginLeft">0dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:layout_marginTop">12dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+
+    </style>
+
+    <style name="PageTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">26sp</item>
+        <item name="android:fontFamily">@font/inter_bold</item>
+        <item name="android:layout_marginTop">35dp</item>
+        <item name="android:layout_marginLeft">16dp</item>
+        <item name="android:textColor">@color/black_light</item>
+    </style>
+
+    <style name="subTitle">
+        <item name="android:textColor">@color/black_light</item>
+        <item name="android:textSize">20sp</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
+
+    <style name="cbc_card_image">
+        <item name="android:layout_width">48dp</item>
+        <item name="android:layout_height">48dp</item>
+    </style>
+
+    <style name="cbc_card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="cardBackgroundColor">#ECF1F5</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="cbc_card_container">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="cbc_card_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="cbc_card_subtitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">3dp</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#5A5A5A</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="btn_back_arrow">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:src">@drawable/ic_back_arrow</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="btn_settings">
+        <item name="android:layout_width">25dp</item>
+        <item name="android:layout_height">25dp</item>
+        <item name="android:src">@drawable/ic_outline_settings_24</item>
+        <item name="android:background">?attr/selectableItemBackgroundBorderless</item>
+        <item name="android:layout_marginTop">20dp</item>
+    </style>
+
+    <style name="card_choose_business_level">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="cardBackgroundColor">#ECF1F5</item>
+        <item name="cardCornerRadius">10dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="ccb_lvl_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="cbc_card_title.ccb">
+        <item name="android:layout_marginTop">14dp</item>
+        <item name="android:layout_marginStart">70dp</item>
+    </style>
+
+    <style name="cbc_card_subtitle.ccb">
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#5A5A5A</item>
+        <item name="fontFamily">@font/inter_regular</item>
+    </style>
+
+    <style name="owned_business_page_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">17dp</item>
+        <item name="android:layout_marginStart">16dp</item>
+        <item name="android:layout_marginEnd">16dp</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:layout_marginBottom">47dp</item>
+        <item name="android:textColor">@color/black_light</item>
+    </style>
+
+    <style name="profit_card">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">-23dp</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginEnd">40dp</item>
+        <item name="cardElevation">20dp</item>
+        <item name="cardCornerRadius">10dp</item>
+    </style>
+
+    <style name="owned_businesses_page_common_card">
+        <item name="cardElevation">20dp</item>
+        <item name="cardCornerRadius">10dp</item>
+    </style>
+
+    <style name="owned_business_page_profit">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="android:layout_marginTop">25dp</item>
+        <item name="android:textSize">36sp</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+    </style>
+
+    <style name="owned_business_page_subtext">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#858585</item>
+        <item name="android:textSize">12sp</item>
+        <item name="fontFamily">@font/inter_medium</item>
+    </style>
+
+    <style name="owned_business_page_subtext.profit_description">
+        <item name="android:layout_marginTop">0dp</item>
+        <item name="android:layout_marginBottom">25dp</item>
+    </style>
+
+    <style name="common_card_icon">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">18dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">10dp</item>
+    </style>
+
+    <style name="common_card_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="android:layout_marginTop">20dp</item>
+        <item name="android:layout_marginEnd">10dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textColor">@color/black_light</item>
+    </style>
+
+    <style name="owned_businesses_page_common_card.Expand_capacity">
+        <item name="cardBackgroundColor">#E7E7E7</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_marginEnd">14dp</item>
+    </style>
+
+    <style name="taxi_expand_card_plus_text">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="taxi_expand_card_plus_subtext">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">5dp</item>
+    </style>
+
+    <style name="taxi_filter_card">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">34dp</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="cardBackgroundColor">#E7E7E7</item>
+        <item name="cardElevation">0dp</item>
+<!--        <item name="strokeWidth">1dp</item>-->
+<!--        <item name="strokeColor">#F7B731</item>-->
+        <item name="cardCornerRadius">17dp</item>
+        <item name="android:layout_marginStart">10dp</item>
+        <item name="rippleColor">@android:color/transparent</item>
+    </style>
+
+    <style name="taxi_filter_card_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginStart">12dp</item>
+        <item name="android:layout_marginEnd">12dp</item>
+    </style>
+
+    <style name="building_count_card_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginStart">40dp</item>
+        <item name="android:layout_marginTop">5dp</item>
+    </style>
+
+    <style name="building_count_card_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_medium</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:textColor">@color/black_light</item>
+    </style>
+
+    <style name="BuildingSeekBarColor"
+        parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">@color/building_red</item>
+    </style>
+
+    <style name="choose_building_card_values">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:layout_marginStart">32dp</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="android:layout_marginTop">6dp</item>
+    </style>
+
+    <style name="BankSeekBarColor"
+        parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">#2C7DFE</item>
+    </style>
+
+    <style name="profile_infographic_item">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">15dp</item>
+        <item name="android:layout_marginEnd">2dp</item>
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="profile_infographic_item_wrapper">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginEnd">2dp</item>
+    </style>
+
+    <style name="profile_infographic_row_wrapper">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginBottom">10dp</item>
+    </style>
+
+    <style name="profile_infographic_row_icon">
+        <item name="android:layout_width">14dp</item>
+        <item name="android:layout_height">14dp</item>
+        <item name="cardCornerRadius">7dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="profile_infographic_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@color/black_light</item>
+        <item name="android:layout_marginStart">21dp</item>
+    </style>
+
+    <style name="profile_infographic_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">@color/black_light</item>
+    </style>
+
+    <style name="semi_divider">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">1dp</item>
+        <item name="cardBackgroundColor">#E0E0E0</item>
+        <item name="android:layout_marginStart">108dp</item>
+        <item name="android:layout_marginEnd">108dp</item>
+        <item name="cardElevation">0dp</item>
+    </style>
+
+    <style name="profile_garage_title">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="profile_garage_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="stats_text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+
+    </style>
+
+    <style name="stats_value">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="fontFamily">@font/inter_semibold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="stats_row_wrapper">
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+    <style name="plus_minus_button">
+        <item name="cardCornerRadius">0dp</item>
+        <item name="cardElevation">0dp</item>
+        <item name="cardBackgroundColor">#F3F3F3</item>
+        <item name="android:layout_height">46dp</item>
+        <item name="android:layout_width">46dp</item>
+    </style>
+</resources>

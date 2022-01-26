@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".StockMarketFragment"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/ic_back_arrow"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="10dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/PageTitle"
+                android:textSize="22sp"
+                android:layout_marginTop="0dp"
+                android:layout_marginStart="22dp"
+                android:text="@string/stock_market"
+                app:layout_constraintStart_toEndOf="@id/btn_back"
+                app:layout_constraintTop_toTopOf="@id/btn_back"
+                app:layout_constraintBottom_toBottomOf="@+id/btn_back"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <HorizontalScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scrollbars="none"
+            android:layout_marginTop="3dp">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/filter_highest_dividend"
+                    style="@style/taxi_filter_card"
+                    android:layout_marginStart="16dp">
+
+                    <TextView
+                        android:id="@+id/highest_dividend_text"
+                        style="@style/taxi_filter_card_text"
+                        android:text="@string/high_dividend"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/filter_lowest_dividend"
+                    style="@style/taxi_filter_card">
+
+                    <TextView
+                        android:id="@+id/lowest_dividend_text"
+                        style="@style/taxi_filter_card_text"
+                        android:text="@string/low_dividend"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/filter_cheap"
+                    style="@style/taxi_filter_card">
+
+                    <TextView
+                        android:id="@+id/cheap_first_text"
+                        style="@style/taxi_filter_card_text"
+                        android:text="@string/cheap_first"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/filter_expensive"
+                    style="@style/taxi_filter_card">
+
+                    <TextView
+                        android:id="@+id/expensive_first_text"
+                        style="@style/taxi_filter_card_text"
+                        android:text="@string/expensive_first"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/filter_highest_capitalization"
+                    style="@style/taxi_filter_card">
+
+                    <TextView
+                        android:id="@+id/high_capitalization_text"
+                        style="@style/taxi_filter_card_text"
+                        android:text="@string/ascending_capitalization"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/filter_lowest_capitalization"
+                    style="@style/taxi_filter_card"
+                    android:layout_marginEnd="16dp">
+
+                    <TextView
+                        android:id="@+id/low_capitalization_text"
+                        style="@style/taxi_filter_card_text"
+                        android:text="@string/descending_capitalization"/>
+
+                </com.google.android.material.card.MaterialCardView>
+
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcViewStocks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="0dp"/>
+
+    </LinearLayout>
+
+</FrameLayout>

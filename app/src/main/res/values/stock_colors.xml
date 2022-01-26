@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="A">#34495e</string>
+    <string name="B">#95a5a6</string>
+    <string name="C">#7f8c8d</string>
+    <string name="D">#c0392b</string>
+    <string name="E">#e74c3c</string>
+    <string name="F">#d35400</string>
+    <string name="G">#f39c12</string>
+    <string name="H">#16a085</string>
+    <string name="I">#27ae60</string>
+    <string name="J">#2980b9</string>
+    <string name="K">#8e44ad</string>
+    <string name="L">#9b59b6</string>
+    <string name="M">#1abc9c</string>
+    <string name="N">#273c75</string>
+    <string name="O">#192a56</string>
+    <string name="P">#40739e</string>
+    <string name="Q">#44bd32</string>
+    <string name="R">#c44569</string>
+    <string name="S">#e15f41</string>
+    <string name="T">#574b90</string>
+    <string name="U">#58B19F</string>
+    <string name="V">#B33771</string>
+    <string name="W">#2C3A47</string>
+    <string name="X">#227093</string>
+    <string name="Y">#58B19F</string>
+    <string name="Z">#F97F51</string>
+</resources>

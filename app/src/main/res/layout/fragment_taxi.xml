@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.TaxiFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/taxi_header_bg"
+            android:paddingTop="24dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                style="@style/btn_back_arrow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" />
+
+            <ImageButton
+                android:id="@+id/btn_settings"
+                style="@style/btn_settings"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_taxi"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_settings"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/owned_business_page_title"
+                app:layout_constraintTop_toBottomOf="@id/im"
+                app:layout_constraintStart_toStartOf="@id/btn_back"
+                app:layout_constraintEnd_toEndOf="@id/btn_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Магазин продуктов махараджа"
+                android:textAlignment="center"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/profit_card"
+            style="@style/profit_card"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvProfit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="$ 3600,11"
+                    style="@style/owned_business_page_profit"/>
+
+                <TextView
+                    style="@style/owned_business_page_subtext.profit_description"
+                    android:text="@string/profit_per_hour"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfit"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profit_card"
+            android:orientation="vertical">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/add_car_park_wrapper"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/profit_card">
+
+                <TextView
+                    android:id="@+id/expand_capacity_text"
+                    style="@style/common_card_text"
+                    android:textSize="18sp"
+                    android:text="@string/expand_garage_capacity"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="16dp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnPlusFive"
+                    app:layout_constraintTop_toBottomOf="@id/expand_capacity_text"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toStartOf="@id/btnPlusTen"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    style="@style/owned_businesses_page_common_card.Expand_capacity"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="35dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/taxi_expand_card_plus_text"
+                            android:text="@string/plus_5_places"/>
+
+                        <TextView
+                            android:id="@+id/tvPlusFiveCost"
+                            style="@style/taxi_expand_card_plus_subtext"
+                            tools:text="$ 140 000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnPlusTen"
+                    app:layout_constraintTop_toTopOf="@id/btnPlusFive"
+                    app:layout_constraintStart_toEndOf="@id/btnPlusFive"
+                    app:layout_constraintEnd_toStartOf="@id/btnPlusTwenty"
+                    style="@style/owned_businesses_page_common_card.Expand_capacity">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/taxi_expand_card_plus_text"
+                            android:text="@string/plus_10_places"/>
+
+                        <TextView
+                            android:id="@+id/tvPlusTenCost"
+                            style="@style/taxi_expand_card_plus_subtext"
+                            tools:text="$ 140 000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/btnPlusTwenty"
+                    app:layout_constraintTop_toTopOf="@id/btnPlusTen"
+                    app:layout_constraintStart_toEndOf="@id/btnPlusTen"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    style="@style/owned_businesses_page_common_card.Expand_capacity"
+                    android:layout_marginEnd="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/taxi_expand_card_plus_text"
+                            android:text="@string/plus_20_places"/>
+
+                        <TextView
+                            android:id="@+id/tvPlusTwentyCost"
+                            style="@style/taxi_expand_card_plus_subtext"
+                            tools:text="$ 140 000"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/expansion_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                style="@style/owned_businesses_page_common_card"
+                app:cardBackgroundColor="#FEFAF2"
+                android:visibility="gone"
+                android:layout_marginBottom="25dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:paddingBottom="10dp">
+
+                    <ImageView
+                        android:id="@+id/icon2"
+                        style="@style/common_card_icon"
+                        android:layout_height="18dp"
+                        android:layout_width="18dp"
+                        android:src="@drawable/ic_taxi"
+                        app:tint="#F6C409"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"/>
+
+                    <TextView
+                        android:id="@+id/open_new_title2"
+                        style="@style/common_card_text"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="0dp"
+                        app:layout_constraintTop_toTopOf="@id/icon2"
+                        app:layout_constraintBottom_toBottomOf="@id/icon2"
+                        app:layout_constraintStart_toEndOf="@id/icon2"
+                        android:text="@string/expansion_in_progress"/>
+
+                    <TextView
+                        android:id="@+id/tvTimeLeft"
+                        style="@style/common_card_text"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="21dp"
+                        app:layout_constraintTop_toBottomOf="@id/open_new_title2"
+
+                        app:layout_constraintStart_toStartOf="@id/icon2"
+                        android:text="@string/remain_time"/>
+
+                    <TextView
+                        android:id="@+id/tv_req_inv2"
+                        style="@style/owned_business_page_subtext"
+                        android:text="@string/time_left"
+                        app:layout_constraintStart_toStartOf="@id/tvTimeLeft"
+                        app:layout_constraintTop_toBottomOf="@id/tvTimeLeft" />
+
+                    <Button
+                        android:id="@+id/btnSkipLevelUp"
+                        android:layout_width="match_parent"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_height="50dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/tv_req_inv2"
+                        android:layout_marginTop="10dp"
+                        android:backgroundTint="#F7B731"
+                        app:cornerRadius="10dp"
+                        android:text="@string/skip_expansion_time"
+                        android:textAllCaps="false"
+                        android:letterSpacing="0"
+                        android:fontFamily="@font/inter_regular"
+                        app:icon="@drawable/ic_skip_time_black" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Button
+                android:id="@+id/btnGetNewCar"
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                app:cornerRadius="10dp"
+                android:backgroundTint="#FED332"
+                android:text="@string/get_new_car"
+                android:letterSpacing="0"
+                android:textAllCaps="false"
+                android:fontFamily="@font/inter_semibold"
+                android:textColor="@color/black_light"
+                android:visibility="visible"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/btnCarPark"
+                android:layout_width="match_parent"
+                android:layout_height="114dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="0dp"
+                app:cardBackgroundColor="#F3F3F3"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:adjustViewBounds="true"
+                        android:src="@drawable/taxi_car_park_bg"/>
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_baseline_chevron_right_24"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginEnd="25dp"
+                        app:tint="#A68100" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        android:layout_marginStart="18dp"
+                        android:layout_marginEnd="18dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/profile_garage_title"
+                            android:text="@string/car_park"
+                            android:textColor="@color/black_light"/>
+
+                        <TextView
+                            android:id="@+id/tvCarCount"
+                            style="@style/profile_garage_text"
+                            android:text="@string/cars_count"
+                            android:textColor="#353535"
+                            android:layout_marginTop="2dp"/>
+
+                        <TextView
+                            android:id="@+id/tvCarCapacity"
+                            style="@style/profile_garage_text"
+                            android:text="@string/car_capacity_count"
+                            android:textColor="#353535"/>
+
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

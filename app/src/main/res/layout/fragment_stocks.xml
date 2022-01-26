@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.StocksFragment"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/PageTitle"
+            android:text="@string/investments"
+            android:layout_marginTop="20dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardBackgroundColor="#ECF1F5"
+            app:cardElevation="7dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:background="@color/blue_nice">
+
+                    <ImageView
+                        android:id="@+id/im1"
+                        android:layout_width="24dp"
+                        android:layout_height="20dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        android:layout_marginStart="15dp"
+                        android:src="@drawable/ic_briefcase_white"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/im1"
+                        android:layout_marginStart="11dp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"
+                        android:text="@string/my_portfolio"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="#858585"
+                    android:textSize="15sp"
+                    android:text="@string/portfolio_cost"/>
+
+                <TextView
+                    android:id="@+id/tvPortfolioCost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="$ 14 582,44"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="15dp"
+                    android:textSize="36sp"
+                    android:textColor="@color/black_light"
+                    android:fontFamily="@font/inter_semibold"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/tvDiff"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginStart="15dp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="#05C46B"
+                        android:textSize="13sp"
+                        tools:text="+ 1920,89 (18,44%)"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginStart="7dp"
+                        android:fontFamily="@font/inter_regular"
+                        android:textColor="#15A6FF"
+                        android:textSize="13sp"
+                        android:text="@string/of_all_time"/>
+
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="28dp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/inter_regular"
+                    android:textColor="#858585"
+                    android:textSize="15sp"
+                    android:text="@string/dividend_yield_per_hour"/>
+
+                <TextView
+                    android:id="@+id/tvDividendYield"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:text="$ 14 582,44"
+                    android:layout_marginTop="2dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginBottom="18dp"
+                    android:textSize="36sp"
+                    android:textColor="@color/black_light"
+                    android:fontFamily="@font/inter_semibold"/>
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <androidx.cardview.widget.CardView
+            style="@style/semi_divider"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnStockMarket"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="0dp"
+            app:cardCornerRadius="18dp"
+            app:cardBackgroundColor="@color/blue_nice"
+            app:cardElevation="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_stock_market"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="80dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:text="@string/stock_market"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_chevron_right_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="25dp"
+                    app:tint="@color/white" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/btnMyStocks"
+            android:layout_width="match_parent"
+            android:layout_height="78dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:cardCornerRadius="18dp"
+            app:cardBackgroundColor="#ECF1F5"
+            app:cardElevation="5dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="43dp"
+                    android:layout_height="35dp"
+                    android:src="@drawable/ic_briefcase_gray"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginStart="17dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:layout_marginStart="80dp"
+                    android:fontFamily="@font/inter_semibold"
+                    android:textColor="#919AA7"
+                    android:textSize="18sp"
+                    android:text="@string/my_stocks"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_baseline_chevron_right_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginEnd="25dp"
+                    app:tint="#919AA7" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+
+</ScrollView>

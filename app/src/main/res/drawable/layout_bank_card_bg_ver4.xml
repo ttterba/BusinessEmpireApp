@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <bitmap
+            android:src="@drawable/bank_card_bg_ver4"
+            android:gravity="center|right"
+            android:alpha="1"
+            android:tileMode="disabled"/>
+        <shape android:shape="rectangle">
+            <solid android:color="#2F2F2F"/>
+        </shape>
+    </item>
+</layer-list>

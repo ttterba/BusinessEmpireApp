@@ -1,0 +1,323 @@
+<resources>
+
+    <string name="rewarded_ad_unit_id" translatable="false">ca-app-pub-7875310431468359/6706515205</string>
+    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-7875310431468359/1893172227</string>
+
+<!--    ДЛЯ ТЕСТОВ-->
+<!--    <string name="rewarded_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/5224354917</string>-->
+<!--    <string name="interstitial_ad_unit_id" translatable="false">ca-app-pub-3940256099942544/1033173712</string>-->
+
+
+    <string name="version" translatable="false">v 1.0.5</string>
+
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+
+    <string name="information">Information</string>
+    <string name="information_page">Information page</string>
+    <string name="info_text">Icons and images\n\nIcon made by 3D Icons. This work is licensed under a Creative Commons Attribution 4.0 International License.\nhttps://www.iconfinder.com/icons/8712516/money_iso_color_icon</string>
+
+    <string name="app_name">Business Empire: RichMan</string>
+
+    <string name="money_clicker">Earnings</string>
+    <string name="business">Business</string>
+    <string name="stocks">Shares</string>
+    <string name="real_estate">Property</string>
+
+    <string name="profile">Profile</string>
+
+    <string name="bank_account">Bank account</string>
+    <string name="money">$ %1$,.2f</string>
+    <string name="level">level</string>
+    <string name="to_level_up">To increase the level: %1$,.2f $</string>
+    <string name="pay_per_click">$ %1$,.2f</string>
+    <string name="for_click">per click</string>
+    <string name="progress">Progress</string>
+    <string name="get_new_level">Raise the level</string>
+    <string name="get_new_level_signed">Raise the level (%s)</string>
+    <string name="card_number_hidden">**** 7439</string>
+    <string name="card_due_date">05/26</string>
+    <string name="balance_text">Balance:</string>
+    <string name="forward">Continue</string>
+    <string name="open_cost">Costs of starting a business:</string>
+
+    <string name="summary_hour_profit">Total income per hour</string>
+    <string name="open_business">Start a business</string>
+    <string name="my_companies">My companies</string>
+    <string name="shop">Shop</string>
+    <string name="factory">Factory</string>
+    <string name="taxi_station">Taxi company</string>
+    <string name="transportation">Shipping company</string>
+    <string name="building_company">Construction company</string>
+    <string name="bank">Bank</string>
+    <string name="per_hour">per hour</string>
+    <string name="profit_per_hour">Income per hour</string>
+    <string name="title">Title</string>
+    <string name="not_enough_money">Insufficient funds</string>
+    <string name="no_owned_business">You don\'t own any businesses.</string>
+
+    <string name="choose_new_business_category">Choose a new business category  </string>
+    <string name="start_price_shop">From $ 4 899</string>
+    <string name="start_price_factory">From $ 24 999</string>
+    <string name="start_price_taxi_station">From $ 9 999</string>
+    <string name="start_price_transportation">From $ 19 899</string>
+    <string name="start_price_building_company">From $ 35 400</string>
+    <string name="start_price_bank">From $ 10 000 000</string>
+
+    <string name="write_shop_title">Enter shop name</string>
+    <string name="write_factory_title">Enter factory name</string>
+    <string name="write_taxi_station_title">Enter taxi company name</string>
+    <string name="write_transportation_company_title">Enter shipping company name</string>
+    <string name="write_building_company_title">Enter construction company name</string>
+    <string name="write_bank_title">Enter bank name </string>
+    <string name="choose_shop_type"> Choose the type of shop</string>
+    <string name="choose_factory_type">Choose the type of factory</string>
+    <string name="local_shop">Local shop</string>
+    <string name="small_shop_network">A small chain of shops</string>
+    <string name="big_shop_network">Large chain of shops</string>
+    <string name="small_factory">Small factory</string>
+    <string name="big_factory">Large factory</string>
+
+    <string name="stage">Stage</string>
+    <string name="category">Category</string>
+    <string name="opening_of_new_points_of_sale">Opening of new sales outlets</string>
+    <string name="required_investments">Required investments</string>
+    <string name="expected_profit_growth">Expected profit growth</string>
+    <string name="open_new_points_of_sale">Open new outlets</string>
+
+    <string name="remain_time">%1$d h. %2$d min. %3$d sec.</string>
+    <string name="expansion_in_progress">Expansion in process</string>
+    <string name="time_left">Remaining time</string>
+    <string name="max_stage_achieved">You have reached the maximum stage of  development of this business!</string>
+    <string name="skip_expansion_time">Skip the expansion time</string>
+
+    <string name="all_time_earnings">Earnings for all time</string>
+    <string name="capitalization">Capitalization</string>
+    <string name="close_business">Close the business</string>
+    <string name="close_business_hint">At the closing of the business you will be refunded  30% of the capitalization.</string>
+
+    <string name="opening_of_new_workshops">Opening of new workshops</string>
+    <string name="open_new_workshops">Open new workshops</string>
+
+    <string name="expand_garage_capacity"> Expand garage capacity </string>
+    <string name="plus_5_places">+5  places</string>
+    <string name="plus_10_places">+10  places</string>
+    <string name="plus_20_places">+20  places</string>
+    <string name="get_new_car">Get a new car</string>
+    <string name="car_park">Car fleet</string>
+    <string name="out_of">of</string>
+    <string name="cars_count">Cars count: %1$,d</string>
+    <string name="car_capacity_count">Capacity: %1$,d</string>
+
+    <string name="all">All</string>
+    <string name="serviceable">Functional</string>
+    <string name="faulty">Defective  cars</string>
+    <string name="highest_income">Highest income</string>
+    <string name="least_income">Lowest income</string>
+    <string name="highest_mileage">Highest mileage</string>
+    <string name="least_mileage">Lowest mileage</string>
+
+    <string name="standart">Standard</string>
+    <string name="taxi_economy">Economy</string>
+    <string name="taxi_comfort">Comfort</string>
+    <string name="taxi_comfort_plus">Comfort+</string>
+    <string name="taxi_business">Business</string>
+    <string name="taxi_premier">Premier</string>
+    <string name="taxi_elite">Elite</string>
+    <string name="mileage_out_of">%1$d km. of %2$d km.</string>
+
+    <string name="choose_vehicle">Choose a car</string>
+    <string name="taxi_category">Taxi category:</string>
+    <string name="max_mileage"> Resource:</string>
+    <string name="kilometers">%1$,d  km.</string>
+    <string name="buy_for">Buy for  $  %1$,.0f</string>
+
+    <string name="transportation_city">City</string>
+    <string name="transportation_intercity">Long distance</string>
+    <string name="type">Type:</string>
+
+    <string name="pending">Pending</string>
+    <string name="builders">Builders</string>
+    <string name="metal">Metal</string>
+    <string name="wood">Wood</string>
+    <string name="concrete">Concrete</string>
+    <string name="get_resources">Refill resources</string>
+    <string name="current_buildings">Ongoing construction projects</string>
+    <string name="list_of_projects">Project list</string>
+    <string name="number_of_buildings_in_progress">Number of buildings in progress:  %1$,d</string>
+    <string name="ready_to_sell">Ready for sale: %1$,d</string>
+    <string name="new_building">Start new construction </string>
+    <string name="choose_building_type">Select the type of construction</string>
+    <string name="private_house">Private House</string>
+    <string name="office_building">Office building</string>
+    <string name="shopping_center">Trade center</string>
+    <string name="apartment_building">Apartment building</string>
+    <string name="skyscraper">Skyscraper</string>
+    <string name="resources">Resources</string>
+    <string name="start_building">Start building</string>
+    <string name="add">Refill</string>
+    <string name="human_count">%1$,d men</string>
+    <string name="tons_count">%1$,d t</string>
+    <string name="сub_count">%1$,d m3</string>
+    <string name="building_time">%1$d h. %2$d min.</string>
+    <string name="hours">%1$d h.</string>
+    <string name="integer_money">$ %1$,d</string>
+    <string name="summary">Summary:</string>
+
+
+    <string name="bank_tariffs">Bank rates</string>
+    <string name="deposits">Deposits</string>
+    <string name="credits">Credits</string>
+    <string name="bank_percent">%1$,.2f %%</string>
+    <string name="bank_vault">Bank vault</string>
+    <string name="total_money">Total funds</string>
+    <string name="in_credits">In credit turnover</string>
+    <string name="bank_last_period_info"> Information for the last %1$d minutes </string>
+    <string name="deposits_income">Attracted depositors\' money</string>
+    <string name="credits_income">Proceeds from credits</string>
+    <string name="deposits_payments">Payments to depositors</string>
+    <string name="expand_vault">Expand the vault</string>
+    <string name="expanding_vault">Expanding vault</string>
+    <string name="max_capacity">Maximum capacity</string>
+    <string name="max_capacity_achieved">You have reached the maximum vault capacity of the bank</string>
+    <string name="bank_integer_money">/ $ %1$,d</string>
+    <string name="control_panel">Control Panel</string>
+    <string name="deposit_percent">Deposit Interest </string>
+    <string name="credit_percent">Loan interest</string>
+    <string name="value">Value:</string>
+
+    <string name="bank_control_panel_hint">\nPaying out money to depositors is a major expense for a bank. However, the higher the interest on deposits, the faster the bank\'s capital grows, because people are more willing to open new deposits at your bank.\n\nLoans are the source of the bank\'s income. The bank earns from the difference between the lending rate and the deposit rate. At the same time, a lower lending rate generates demand, which allows the bank to put more available funds into circulation by lending.\n\nChoose the best combination of interest on deposits and loans to get the highest profits and provide the highest rate of growth of the bank\'s capital.\n\nRemember, if deposit payments exceed loan proceeds, the bank will be operating at a loss!</string>
+    <string name="set_values">Set the values</string>
+    <string name="bank_percent_in_brackets">(%1$,.2f %%)</string>
+
+    <!--  Недвижимость  -->
+    <string name="real_estate_hour_profit">Rental income per hour</string>
+    <string name="offers">Offers</string>
+    <string name="my_real_estate">My property</string>
+    <string name="buy">Buy</string>
+    <string name="geo_location">%s, %s</string>
+    <string name="no_owned_real_estate">You do not own real estate.</string>
+    <string name="no_offers_real_estate">There are no offers on the real estate market.</string>
+    <string name="purchase_confirmation">Purchase confirmation</string>
+    <string name="location">Location</string>
+    <string name="cost">Price</string>
+    <string name="real_estate_market">Real estate market</string>
+    <string name="real_estate_market_description">Buy properties all over the world and earn rental income!</string>
+    <string name="my_real_estate_description">List of my properties</string>
+    <string name="owned_real_estate_count">Purchased real estate: %1$,d</string>
+
+    <string name="investments">Investing</string>
+    <string name="my_portfolio">My stock portfolio</string>
+    <string name="portfolio_cost">Value of stock portfolio</string>
+    <string name="of_all_time">for all time</string>
+    <string name="dividend_yield_per_hour">Dividend yield per hour</string>
+    <string name="stock_market">Stock market</string>
+    <string name="my_stocks">My shares</string>
+    <string name="available">Available</string>
+    <string name="company_sold">Company sold</string>
+    <string name="price_diff_positive">+ $%1$,.2f (%2$,.2f %%)</string>
+    <string name="price_diff_negative">- $%1$,.2f (%2$,.2f %%)</string>
+    <string name="buy_stocks">Buy shares</string>
+    <string name="details">Details</string>
+    <string name="cost_of_one_share">Share price</string>
+    <string name="number_of_available_shares">Number of available shares</string>
+    <string name="company_capitalization">Company capitalization</string>
+    <string name="integer_value">%1$,d</string>
+    <string name="percent">%1$,.2f %%</string>
+    <string name="double_value">%1$,.2f</string>
+    <string name="hour_minute">%02d:%02d</string>
+    <string name="stock_buy">Buying stocks</string>
+    <string name="stock_sell">Selling shares</string>
+    <string name="quantity">Quantity:</string>
+    <string name="number_of_available">%1$,d pcs. available</string>
+    <string name="zero">0</string>
+    <string name="max">Max</string>
+    <string name="lot_pieces">%1$,d pcs.</string>
+    <string name="positive_percent">+ %1$,.2f %%</string>
+    <string name="negative_percent">- %1$,.2f %%</string>
+
+    <string name="summary_cost">Total cost</string>
+    <string name="number_of_stocks">Number of shares</string>
+    <string name="sell_stocks">Sell shares</string>
+    <string name="sell">Sell</string>
+    <string name="no_owned_stocks">You do not have any shares.</string>
+
+    <string name="fortune">Fortune</string>
+    <string name="balance">Balance</string>
+    <string name="businesses">Businesses</string>
+    <string name="real_estate_3">Real Estate</string>
+    <string name="transport">Vehicle</string>
+    <string name="real_estate_2">Bought real estate</string>
+    <string name="my_garage">My Garage</string>
+    <string name="my_garage_desc">Your car collection</string>
+    <string name="my_hangar">My Hangar</string>
+    <string name="my_hangar_desc">Your flying collection</string>
+
+    <string name="car_showroom">Car Showroom</string>
+    <string name="car_showroom_desc">Visit a car showroom to add to your car collection</string>
+    <string name="expensive_first">Expensive first</string>
+    <string name="cheap_first">Cheap first</string>
+
+    <string name="price_starts_from">Price from $%1$,.0f</string>
+    <string name="motor">Engine</string>
+    <string name="equipment">Equipment</string>
+    <string name="df">DF</string>
+    <string name="bst">BST</string>
+    <string name="s_plus">S+</string>
+    <string name="premium">Premium</string>
+    <string name="plus_percent">+ %1$,.0f %%</string>
+    <string name="divided_text">%s | %s</string>
+
+    <string name="aircraft_shop">Aircraft Shop</string>
+    <string name="aircraft_shop_description">Visit the shop to add to your flying collection</string>
+    <string name="team_title">Pilot, flight attendants, maintenance personnel</string>
+    <string name="no_team">No team</string>
+    <string name="team">Team</string>
+    <string name="hire_team">Hire a team</string>
+    <string name="lux">Luxury</string>
+    <string name="decor">Design</string>
+
+    <string name="bought_price">Purchase price: $%1$,.0f</string>
+    <string name="sell_price">Sale price: </string>
+    <string name="parameters">Options</string>
+    <string name="select_as_primary">Select as the primary</string>
+    <string name="primary_vehicles">Primary vehicles</string>
+
+    <!--    Блок статистики-->
+    <string name="statistics">Statistics</string>
+    <string name="business_count">Number of businesses</string>
+    <string name="companies_bought">Bought out companies</string>
+    <string name="cars_counts">Cars</string>
+    <string name="aircraft_count">Aircraft</string>
+    <string name="earned_in_clicker">Earned in clicker</string>
+    <string name="earned_in_business">Earned in business</string>
+    <string name="earned_in_real_estate">Earned on rent</string>
+    <string name="earned_in_dividend">Earned from dividends</string>
+    <string name="earned_in_selling_stocks">Earned on trading</string>
+
+
+    <string name="ready">Ready</string>
+
+    <!--  Цвета классов авто  -->
+    <string name="car_lvl_1">#BDC3C7</string>
+    <string name="car_lvl_2">#3498DB</string>
+    <string name="car_lvl_3">#3A6FED</string>
+    <string name="car_lvl_4">#7158E2</string>
+    <string name="car_lvl_5">#FF4D4D</string>
+    <string name="car_lvl_6">#FBC531</string>
+
+    <!--    Сокращения денег-->
+    <string name="thousand_compressed">$ %1$,.1fk</string>
+    <string name="million_compressed">$ %1$,.1f M</string>
+    <string name="billion_compressed">$ %1$,.1f B</string>
+    <string name="trillion_compressed">$ %1$,.1f T</string>
+    <string name="money_clicker_hint">Click in this area to earn money</string>
+    <string name="buy_more">Buy more</string>
+    <string name="high_dividend">Highest dividend</string>
+    <string name="low_dividend">Lowest dividend</string>
+    <string name="ascending_capitalization">Highest capitalization</string>
+    <string name="descending_capitalization">Lowest capitalization</string>
+    <string name="buying_a">Buying %s</string>
+    <string name="total_string">Total: %s</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+</resources>

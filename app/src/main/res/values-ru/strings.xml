@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <string name="information">Информация</string>
+    <string name="information_page">Страница информации</string>
+    <string name="info_text">Icons and images\n\nIcon made by 3D Icons. This work is licensed under a Creative Commons Attribution 4.0 International License.\nhttps://www.iconfinder.com/icons/8712516/money_iso_color_icon</string>
+
+    <string name="app_name">Business Empire</string>
+
+    <string name="money_clicker">Заработок</string>
+    <string name="business">Бизнес</string>
+    <string name="stocks">Акции</string>
+    <string name="real_estate">Имущество</string>
+    <string name="profile">Профиль</string>
+    <string name="bank_account">Банковский счет</string>
+    <string name="money">$ %1$,.2f</string>
+    <string name="level">уровень</string>
+    <string name="to_level_up">Для повышения: %1$,.2f $</string>
+    <string name="pay_per_click">$ %1$,.2f</string>
+    <string name="for_click">за клик</string>
+    <string name="progress">Прогресс</string>
+    <string name="get_new_level">Поднять уровень</string>
+    <string name="card_number_hidden">**** 7439</string>
+    <string name="card_due_date">05/26</string>
+    <string name="balance_text">Баланс:</string>
+    <string name="forward">Продолжить</string>
+    <string name="open_cost">Затраты на открытие:</string>
+
+    <string name="summary_hour_profit">Суммарный доход в час</string>
+    <string name="open_business">Открыть бизнес</string>
+    <string name="my_companies">Мои компании</string>
+    <string name="shop">Продажа</string>
+    <string name="factory">Производство</string>
+    <string name="taxi_station">Таксопарк</string>
+    <string name="transportation">Перевозки</string>
+    <string name="building_company">Строительство</string>
+    <string name="bank">Банк</string>
+    <string name="per_hour">в час</string>
+    <string name="profit_per_hour">Доход в час</string>
+    <string name="title">Название</string>
+    <string name="not_enough_money">Недостаточно средств</string>
+    <string name="no_owned_business">У вас нет бизнесов во владении.</string>
+
+    <string name="choose_new_business_category">Выберите категорию нового бизнеса</string>
+    <string name="start_price_shop">От $ 4 899</string>
+    <string name="start_price_factory">От $ 24 999</string>
+    <string name="start_price_taxi_station">От $ 9 999</string>
+    <string name="start_price_transportation">От $ 19 899</string>
+    <string name="start_price_building_company">От $ 35 400</string>
+    <string name="start_price_bank">От $ 10 000 000</string>
+
+    <string name="write_shop_title">Укажите название магазина</string>
+    <string name="write_factory_title">Укажите название производства</string>
+    <string name="write_taxi_station_title">Укажите название таксопарка</string>
+    <string name="write_transportation_company_title">Укажите название транспортной компании</string>
+    <string name="write_building_company_title">Укажите название строительной компании</string>
+    <string name="write_bank_title">Укажите название банка</string>
+    <string name="choose_shop_type">Выберите тип открываемого магазина</string>
+    <string name="choose_factory_type">Выберите тип  производства</string>
+    <string name="local_shop">Местный магазин</string>
+    <string name="small_shop_network">Небольшая сеть магазинов</string>
+    <string name="big_shop_network">Крупная сеть магазинов </string>
+    <string name="small_factory">Небольшое производство</string>
+    <string name="big_factory">Крупное прозиводство</string>
+
+    <string name="stage">Стадия</string>
+    <string name="category">Категория</string>
+    <string name="opening_of_new_points_of_sale">Открытие новых точек продаж</string>
+    <string name="required_investments">Необходимые вложения</string>
+    <string name="expected_profit_growth">Ожидаемый рост прибыли</string>
+    <string name="open_new_points_of_sale">Открыть новые точки продаж</string>
+
+    <string name="remain_time">%1$d ч. %2$d мин. %3$d сек.</string>
+    <string name="expansion_in_progress">Расширение в процессе</string>
+    <string name="time_left">Оставшееся время</string>
+    <string name="max_stage_achieved">Вы достигли максимальной стадии развития данного бизнеса!</string>
+    <string name="skip_expansion_time">Пропустить время расширения</string>
+
+    <string name="all_time_earnings">Заработок за все время</string>
+    <string name="capitalization">Капитализация</string>
+    <string name="close_business">Закрыть бизнес</string>
+    <string name="close_business_hint">При закрытии бизнеса Вам будет возвмещено 30% от капитализации.</string>
+
+    <string name="opening_of_new_workshops">Открытие новых цехов</string>
+    <string name="open_new_workshops">Открыть новые цеха</string>
+
+    <string name="expand_garage_capacity">Расширить вместимость автопарка</string>
+    <string name="plus_5_places">+5 мест</string>
+    <string name="plus_10_places">+10 мест</string>
+    <string name="plus_20_places">+20 мест</string>
+    <string name="get_new_car">Приобрести новый автомобиль</string>
+    <string name="car_park">Автопарк</string>
+    <string name="out_of">из</string>
+    <string name="cars_count">Автомоблией: %1$,d</string>
+    <string name="car_capacity_count">Вместимость: %1$,d</string>
+
+    <string name="all">Все</string>
+    <string name="serviceable">Исправные</string>
+    <string name="faulty">Неисправные</string>
+    <string name="highest_income">Наибольший доход</string>
+    <string name="least_income">Наименьший доход</string>
+    <string name="highest_mileage">Наибольший пробег</string>
+    <string name="least_mileage">Наименьший пробег</string>
+    <string name="standart">Стандарт</string>
+
+    <string name="taxi_economy">Эконом</string>
+    <string name="taxi_comfort">Комфорт</string>
+    <string name="taxi_comfort_plus">Комфорт+</string>
+    <string name="taxi_business">Business</string>
+    <string name="taxi_premier">Premier</string>
+    <string name="taxi_elite">Elite</string>
+    <string name="mileage_out_of">%1$d км. из %2$d км.</string>
+
+    <string name="choose_vehicle">Выберите автомобиль</string>
+    <string name="taxi_category">Класс такси:</string>
+    <string name="max_mileage">Ресурс:</string>
+    <string name="kilometers">%1$,d км.</string>
+    <string name="buy_for">Купить за $ %1$,.0f</string>
+
+    <string name="transportation_city">Городской</string>
+    <string name="transportation_intercity">Междугородний</string>
+    <string name="type">Вид:</string>
+
+    <string name="pending">В ожидании</string>
+    <string name="builders">Строители</string>
+    <string name="metal">Металл</string>
+    <string name="wood">Древесина</string>
+    <string name="concrete">Бетон</string>
+    <string name="get_resources">Пополнить ресурсы</string>
+    <string name="current_buildings">Текущие стройки</string>
+    <string name="list_of_projects">Список проектов</string>
+    <string name="number_of_buildings_in_progress">Строится: %1$,d</string>
+    <string name="ready_to_sell">Готово к продаже: %1$,d</string>
+    <string name="new_building">Начать новое строительство</string>
+    <string name="choose_building_type">Выберите тип стройки</string>
+    <string name="private_house">Частный дом</string>
+    <string name="office_building">Офисное здание</string>
+    <string name="shopping_center">Торговый центр</string>
+    <string name="apartment_building">Многоквартирный дом</string>
+    <string name="skyscraper">Высотное здание</string>
+    <string name="resources">Ресурсы</string>
+    <string name="start_building">Начать строительство</string>
+    <string name="add">Пополнить</string>
+    <string name="human_count">%1$,d чел.</string>
+    <string name="tons_count">%1$,d т.</string>
+    <string name="сub_count">%1$,d куб.</string>
+    <string name="building_time">%1$d ч. %2$d мин.</string>
+    <string name="hours">%1$d ч.</string>
+    <string name="integer_money">$ %1$,d</string>
+    <string name="summary">Итого:</string>
+
+    <string name="bank_tariffs">Тарифы банка</string>
+    <string name="deposits">Вклады</string>
+    <string name="credits">Кредиты</string>
+    <string name="bank_percent">%1$,.2f %%</string>
+    <string name="bank_vault">Хранилище банка</string>
+    <string name="total_money">Всего средств</string>
+    <string name="in_credits">В кредитном обороте</string>
+    <string name="bank_last_period_info">Информация за последние %1$d минут</string>
+    <string name="deposits_income">Привлечено денег вкладчиков</string>
+    <string name="credits_income">Поступления от кредитов</string>
+    <string name="deposits_payments">Выплаты вкладчикам</string>
+    <string name="expand_vault">Расширить хранилище</string>
+    <string name="expanding_vault">Расширение хранилища</string>
+    <string name="max_capacity">Максимальная вместимость</string>
+    <string name="max_capacity_achieved">Вы достигли максимального объема хранилища банка</string>
+    <string name="bank_integer_money">/ $ %1$,d</string>
+    <string name="control_panel">Панель управления</string>
+    <string name="deposit_percent">Процент по вкладам</string>
+    <string name="credit_percent">Процент по кредитам</string>
+    <string name="value">Значение:</string>
+    <string name="bank_control_panel_hint">\nВыплата денег вкладчикам - основная статья расходов банка. Однако чем выше процент по вкладам, тем быстрее растет капитал банка, поскольку люди охотнее открывают новые вклады в Вашем банке.\n\nКредиты - источник дохода банка. Банк зарабатывает на разнице между кредитной ставкой и ставкой по вкладу. В то же время более низкая крединтная ставка порождает спрос, что позволяет банку пускать в оборот большее количество имеющихся средств, выдавая кредиты.\n\nПодбирайте оптимальное сочетание процентов по вкладам и кредитам, чтобы получать наибольшую прибыль и обеспечивать наивысшие темпы роста капитала банка.\n\nПомните, если выплаты по вкладам будут превышать поступления от кредитов, то банк будет работать в убыток!
+    </string>
+    <string name="set_values">Установить значения</string>
+    <string name="bank_percent_in_brackets">(%1$,.2f %%)</string>
+
+    <!--  Недвижимость  -->
+    <string name="real_estate_hour_profit">Доход от аренды в час</string>
+    <string name="offers">Предложения</string>
+    <string name="my_real_estate">Моя недвижимость</string>
+    <string name="buy">Купить</string>
+    <string name="geo_location">%s, %s</string>
+    <string name="no_owned_real_estate">У вас нет объектов недвижимости</string>
+    <string name="no_offers_real_estate">Нет предложений</string>
+    <string name="purchase_confirmation">Подтверждение покупки</string>
+    <string name="location">Локация</string>
+    <string name="cost">Стоимость</string>
+    <string name="real_estate_market">Рынок недвижимости</string>
+    <string name="real_estate_market_description">Приобретайте объекты недвижимости по всему миру и получайте доход от аренды!</string>
+    <string name="my_real_estate_description">Список моих объектов недвижимости</string>
+    <string name="owned_real_estate_count">Приобретено объектов недвижимости: %1$,d</string>
+
+    <string name="investments">Инвестиции</string>
+    <string name="my_portfolio">Мой портфель</string>
+    <string name="portfolio_cost">Стоимость портфеля</string>
+    <string name="of_all_time">за все время</string>
+    <string name="dividend_yield_per_hour">Дивидендная доходность в час</string>
+    <string name="stock_market">Фондовый рынок</string>
+    <string name="my_stocks">Мои акции</string>
+    <string name="available">Доступно</string>
+    <string name="company_sold">Компания продана</string>
+    <string name="price_diff_positive">+ $%1$,.2f (%2$,.2f %%)</string>
+    <string name="price_diff_negative">- $%1$,.2f (%2$,.2f %%)</string>
+    <string name="buy_stocks">Купить акции</string>
+    <string name="details">Сведения</string>
+    <string name="cost_of_one_share">Стоимость одной акции</string>
+    <string name="number_of_available_shares">Количество доступных акций</string>
+    <string name="company_capitalization">Капитализация компании</string>
+    <string name="integer_value">%1$,d</string>
+    <string name="percent">%1$,.2f %%</string>
+    <string name="double_value">%1$,.2f</string>
+    <string name="hour_minute">%02d:%02d</string>
+    <string name="stock_buy">Покупка акций</string>
+    <string name="stock_sell">Продажа акций</string>
+    <string name="quantity">Количество:</string>
+    <string name="number_of_available">Доступно %1$,d шт.</string>
+    <string name="zero">0</string>
+    <string name="max">Макс.</string>
+    <string name="lot_pieces">%1$,d шт.</string>
+    <string name="positive_percent">+ %1$,.2f %%</string>
+    <string name="negative_percent">- %1$,.2f %%</string>
+
+    <string name="summary_cost">Суммарная стоимость</string>
+    <string name="number_of_stocks">Количество акций</string>
+    <string name="sell_stocks">Продать акции</string>
+    <string name="sell">Продать</string>
+    <string name="no_owned_stocks">У вас нет купленных акций.</string>
+
+    <string name="fortune">Состояние</string>
+    <string name="balance">Баланс</string>
+    <string name="businesses">Бизнесы</string>
+    <string name="real_estate_3">Недвижимость</string>
+    <string name="transport">Транспорт</string>
+    <string name="real_estate_2">Куплено недвижимости</string>
+    <string name="my_garage">Мой гараж</string>
+    <string name="my_garage_desc">Ваша коллекция автомобилей</string>
+    <string name="my_hangar">Мой ангар</string>
+    <string name="my_hangar_desc">Ваша коллекция летательных средств</string>
+
+    <string name="car_showroom">Автосалон</string>
+    <string name="car_showroom_desc">Посетите автосалон, чтобы пополнить коллекцию автомобилей</string>
+    <string name="expensive_first">Сначала дорогие</string>
+    <string name="cheap_first">Сначала дешевые</string>
+
+    <string name="price_starts_from">Цена от $%1$,.0f</string>
+    <string name="motor">Двигатель</string>
+    <string name="equipment">Комплектация</string>
+    <string name="df">DF</string>
+    <string name="bst">BST</string>
+    <string name="s_plus">S+</string>
+    <string name="premium">Премиум</string>
+    <string name="plus_percent">+ %1$,.0f %%</string>
+    <string name="divided_text">%s | %s</string>
+
+    <string name="aircraft_shop">Магазин авиатехники</string>
+    <string name="aircraft_shop_description">Посетите магазин, чтобы пополнить коллекцию летательных средств</string>
+    <string name="team_title">Пилот, бортпроводники, обслуживающий персонал</string>
+    <string name="no_team">Без команды</string>
+    <string name="team">Команда</string>
+    <string name="hire_team">Нанять команду</string>
+    <string name="lux">Люкс</string>
+    <string name="decor">Оформление</string>
+
+    <string name="bought_price">Стоимость покупки: $%1$,.0f</string>
+    <string name="sell_price">Стоимость продажи: </string>
+    <string name="parameters">Параметры</string>
+    <string name="select_as_primary">Выбрать как основное</string>
+    <string name="primary_vehicles">Основные ТС</string>
+
+    <!--    Блок статистики-->
+    <string name="statistics">Статистика</string>
+    <string name="business_count">Кол-во бизнесов</string>
+    <string name="companies_bought">Выкуплено компаний</string>
+    <string name="cars_counts">Автомобилей</string>
+    <string name="aircraft_count">Летательных средств</string>
+    <string name="earned_in_clicker">Заработано в кликере</string>
+    <string name="earned_in_business">Заработано в бизнесе</string>
+    <string name="earned_in_real_estate">Заработано на аренде</string>
+    <string name="earned_in_dividend">Заработано на дивидендах</string>
+    <string name="earned_in_selling_stocks">Заработано на трейдинге</string>
+
+
+    <string name="ready">Готово</string>
+
+    <!--  Цвета классов авто  -->
+    <string name="car_lvl_1">#BDC3C7</string>
+    <string name="car_lvl_2">#3498DB</string>
+    <string name="car_lvl_3">#3A6FED</string>
+    <string name="car_lvl_4">#7158E2</string>
+    <string name="car_lvl_5">#FF4D4D</string>
+    <string name="car_lvl_6">#FBC531</string>
+
+    <!--    Сокращения денег-->
+    <string name="thousand_compressed">$ %1$,.1f тыс.</string>
+    <string name="million_compressed">$ %1$,.1f млн</string>
+    <string name="billion_compressed">$ %1$,.1f млрд</string>
+    <string name="trillion_compressed">$ %1$,.1f трлн</string>
+    <string name="money_clicker_hint">Кликайте в этой области, чтобы зарабатывать деньги</string>
+    <string name="get_new_level_signed">Поднять уровень (%s)</string>
+    <string name="buy_more">Купить еще</string>
+    <string name="high_dividend">Высокий дивиденд</string>
+    <string name="low_dividend">Низкий дивиденд</string>
+    <string name="descending_capitalization">Наименьшая капитализация</string>
+    <string name="ascending_capitalization">Наибольшая капитализация</string>
+    <string name="buying_a">Покупка %s</string>
+    <string name="total_string">Итого: %s</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+</resources>

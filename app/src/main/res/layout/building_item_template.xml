@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_marginBottom="10dp"
+    app:cardElevation="0dp"
+    app:cardCornerRadius="15dp"
+    app:cardBackgroundColor="#F3F3F3"
+    android:layout_marginStart="16dp"
+    android:layout_marginEnd="16dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="15dp"
+            tools:text="Офисное помещение"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_semibold"/>
+
+        <ImageView
+            android:id="@+id/building_image"
+            android:layout_width="100dp"
+            android:layout_height="90dp"
+            android:src="@drawable/buildings_private_house"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/time_icon"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toTopOf="@id/tv_time"
+            app:layout_constraintBottom_toBottomOf="@id/tv_time"
+            android:src="@drawable/ic_clock"
+            app:tint="#858585"/>
+
+        <TextView
+            android:id="@+id/tv_time"
+            style="@style/choose_building_card_values"
+            android:textSize="14sp"
+            tools:text="32 ч. 11 мин."
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:layout_marginStart="28dp"/>
+
+        <ImageView
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            app:layout_constraintStart_toStartOf="@id/tv_title"
+            app:layout_constraintTop_toTopOf="@id/tv_sell_price"
+            app:layout_constraintBottom_toBottomOf="@id/tv_sell_price"
+            android:src="@drawable/ic_price"
+            app:tint="#858585" />
+
+        <TextView
+            android:id="@+id/tv_sell_price"
+            style="@style/choose_building_card_values"
+            android:textSize="14sp"
+            tools:text="$ 20 482 725"
+            android:layout_marginStart="0dp"
+            app:layout_constraintStart_toStartOf="@id/tv_time"
+            app:layout_constraintTop_toBottomOf="@id/tv_time"/>
+
+        <ImageButton
+            android:id="@+id/btn_skip_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_building_skip_time"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintStart_toEndOf="@id/tv_sell_price"
+            app:layout_constraintEnd_toStartOf="@id/building_image"
+            app:layout_constraintTop_toTopOf="@id/tv_time"
+            app:layout_constraintBottom_toBottomOf="@id/tv_sell_price"
+            android:layout_marginEnd="15dp"/>
+
+        <ImageButton
+            android:id="@+id/btn_sell"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_building_sell"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            app:layout_constraintStart_toEndOf="@id/tv_sell_price"
+            app:layout_constraintEnd_toStartOf="@id/building_image"
+            app:layout_constraintTop_toTopOf="@id/tv_time"
+            app:layout_constraintBottom_toBottomOf="@id/tv_sell_price"
+            android:layout_marginEnd="15dp"
+            android:visibility="gone"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

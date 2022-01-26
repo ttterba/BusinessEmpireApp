@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/tvStockIcon"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="@drawable/circle"
+            android:backgroundTint="@color/blue_nice"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp">
+
+            <TextView
+                android:id="@+id/tvStockText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                tools:text="А"
+                android:textSize="22sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/inter_semibold"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tvStockIcon"
+            app:layout_constraintStart_toEndOf="@id/tvStockIcon"
+            app:layout_constraintEnd_toStartOf="@id/tvCost"
+            android:layout_marginStart="14dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="6dp"
+            tools:text="Tata Motors"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_semibold"
+            android:lines="1"/>
+
+        <TextView
+            android:id="@+id/tvSubText"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/tvStockIcon"
+            app:layout_constraintStart_toEndOf="@id/tvStockIcon"
+            app:layout_constraintEnd_toStartOf="@id/tvDiff"
+            android:layout_marginStart="14dp"
+            android:layout_marginBottom="3dp"
+            android:layout_marginEnd="5dp"
+            tools:text="Компания продана"
+            android:textSize="13sp"
+            android:textColor="#858585"
+            android:fontFamily="@font/inter_regular"/>
+
+        <TextView
+            android:id="@+id/tvCost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            tools:text="$ 2 844,42"
+            android:textSize="16sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_semibold"/>
+
+        <TextView
+            android:id="@+id/tvDiff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/tvSubText"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"
+            tools:text="+ $260,4 (9,93%)"
+            android:textSize="13sp"
+            android:textColor="@color/black_light"
+            android:fontFamily="@font/inter_regular"/>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="#E0E0E0"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

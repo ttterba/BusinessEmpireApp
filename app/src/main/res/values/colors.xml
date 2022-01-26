@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#0C66F5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="nav_inactive">#A5B1C2</color>
+    <color name="nav_ripple">#CFD3D8</color>
+    <color name="theme_white">#F5F5F5</color>
+    <color name="theme_dark_blue">#3867D6</color>
+    <color name="theme_light_blue">#4B7BEC</color>
+
+    <color name="card_color">#0C66F5</color>
+    <color name="card_text_low_accent">#ACACAC</color>
+
+    <color name="green_positive">#2BC271</color>
+
+    <color name="black_light">#2f2f2f</color>
+    <color name="blue_main">#0C66F5</color>
+
+    <color name="shop_green">#20BF6B</color>
+    <color name="factory_blue">#40739E</color>
+    <color name="taxi_yellow">#F7B731</color>
+    <color name="transportation_brown">#F19066</color>
+    <color name="building_red">#EB3B5A</color>
+    <color name="bank_gray">#A5B1C2</color>
+
+    <color name="taxi_filter_selected">#FED332</color>
+    <color name="taxi_filter_unselected">#E7E7E7</color>
+    <color name="taxi_car_selected">#FFF1D5</color>
+    <color name="taxi_car_unselected">#F3F3F3</color>
+
+    <color name="transportation_filter_selected">#F3A683</color>
+    <color name="transportation_filter_unselected">#E7E7E7</color>
+    <color name="transportation_car_selected">#FFE6D5</color>
+    <color name="transportation_car_unselected">#F3F3F3</color>
+
+    <color name="building_selected">#FFD5DF</color>
+    <color name="blue_nice">#2C7DFE</color>
+
+    <color name="scale_balance">#2C7DFE</color>
+    <color name="scale_business">#D52027</color>
+    <color name="scale_stocks">#FFB049</color>
+    <color name="scale_real_estate">#B13181</color>
+    <color name="scale_transport">#2EB295</color>
+</resources>

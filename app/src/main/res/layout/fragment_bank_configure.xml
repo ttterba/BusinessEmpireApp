@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BankConfigureFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.core.widget.NestedScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageButton
+                    android:id="@+id/btn_back"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_back_arrow"
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    style="@style/PageTitle"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/control_panel"/>
+
+
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/im_builder2"
+                        android:layout_width="30dp"
+                        android:layout_height="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:src="@drawable/ic_deposit_percent"/>
+
+                    <TextView
+                        android:id="@+id/text1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/im_builder2"
+                        app:layout_constraintBottom_toBottomOf="@id/im_builder2"
+                        android:text="@string/deposit_percent"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginStart="10dp"/>
+
+                    <SeekBar
+                        android:id="@+id/sb_deposit_percent"
+                        android:theme="@style/BankSeekBarColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/text1"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvMinBuilders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/sb_deposit_percent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/value"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/tvDepositPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/sb_deposit_percent"
+                        app:layout_constraintStart_toEndOf="@id/tvMinBuilders"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/inter_bold"
+                        tools:text="7,5 %"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="4dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp">
+
+                    <ImageView
+                        android:id="@+id/im_builder3"
+                        android:layout_width="19dp"
+                        android:layout_height="19dp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintBottom_toBottomOf="@id/text2"
+                        app:layout_constraintTop_toTopOf="@id/text2"
+                        android:src="@drawable/ic_credit_percent"/>
+
+                    <TextView
+                        android:id="@+id/text2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintStart_toEndOf="@id/im_builder3"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:text="@string/credit_percent"
+                        android:textSize="16sp"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/inter_regular"
+                        android:layout_marginStart="10dp"/>
+
+                    <SeekBar
+                        android:id="@+id/sb_credit_percent"
+                        android:theme="@style/BankSeekBarColor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/text2"
+                        android:layout_marginTop="5dp"/>
+
+                    <TextView
+                        android:id="@+id/tvMinMetal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/sb_credit_percent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/inter_regular"
+                        android:text="@string/value"
+                        android:layout_marginTop="3dp"/>
+
+                    <TextView
+                        android:id="@+id/tvCreditPercent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintTop_toBottomOf="@id/sb_credit_percent"
+                        app:layout_constraintStart_toEndOf="@id/tvMinMetal"
+                        android:textSize="14sp"
+                        android:textColor="@color/black_light"
+                        android:fontFamily="@font/inter_bold"
+                        tools:text="7,5 %"
+                        android:layout_marginTop="3dp"
+                        android:layout_marginStart="4dp"/>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <Button
+                    android:id="@+id/btnApply"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="55dp"
+                    android:layout_marginBottom="0dp"
+                    android:textSize="16sp"
+                    app:cornerRadius="10dp"
+                    android:backgroundTint="#2C7DFE"
+                    android:text="@string/set_values"
+                    android:letterSpacing="0"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/inter_medium"
+                    android:textColor="@color/white"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    style="@style/owned_businesses_page_common_card"
+                    android:layout_height="wrap_content"
+                    android:layout_width="match_parent"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="40dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="22dp"
+                            android:layout_height="32dp"
+                            android:src="@drawable/ic_bulb"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="12dp"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="@string/bank_control_panel_hint"
+                            android:fontFamily="@font/inter_regular"
+                            android:textSize="13sp"
+                            android:textColor="@color/black_light"
+                            android:layout_marginBottom="16dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:layout_marginTop="5dp"/>
+
+                    </LinearLayout>
+
+                </com.google.android.material.card.MaterialCardView>
+
+            </LinearLayout>
+
+        </androidx.core.widget.NestedScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

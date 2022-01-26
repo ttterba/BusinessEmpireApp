@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FactoryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="40dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:background="@drawable/factory_header_bg"
+            android:paddingTop="24dp">
+
+            <ImageButton
+                android:id="@+id/btn_back"
+                style="@style/btn_back_arrow"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:layout_marginStart="16dp" />
+
+            <ImageButton
+                android:id="@+id/btn_settings"
+                style="@style/btn_settings"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp" />
+
+            <ImageView
+                android:id="@+id/im"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_factory"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/btn_settings"/>
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/owned_business_page_title"
+                app:layout_constraintTop_toBottomOf="@id/im"
+                app:layout_constraintStart_toStartOf="@id/btn_back"
+                app:layout_constraintEnd_toEndOf="@id/btn_settings"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:text="Магазин продуктов махараджа"
+                android:textAlignment="center"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/profit_card"
+            style="@style/profit_card"
+            app:layout_constraintTop_toBottomOf="@id/header"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tvProfit"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    tools:text="$ 3600,11"
+                    style="@style/owned_business_page_profit"/>
+
+                <TextView
+                    style="@style/owned_business_page_subtext.profit_description"
+                    android:text="@string/profit_per_hour"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvProfit"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/stage_card"
+            style="@style/owned_businesses_page_common_card"
+            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/profit_card"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="24dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/common_card_icon"
+                    android:src="@drawable/ic_stage"
+                    app:tint="#40739E" />
+
+                <TextView
+                    android:id="@+id/tvStage"
+                    style="@style/common_card_text"
+                    tools:text="4"/>
+
+                <TextView
+                    style="@style/owned_business_page_subtext"
+                    android:text="@string/stage"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            style="@style/owned_businesses_page_common_card"
+            android:layout_height="wrap_content"
+            android:layout_width="0dp"
+            app:layout_constraintStart_toEndOf="@id/stage_card"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/stage_card"
+            app:layout_constraintTop_toBottomOf="@id/profit_card"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="16dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/common_card_icon"
+                    android:src="@drawable/ic__category"
+                    app:tint="#40739E"/>
+
+                <TextView
+                    android:id="@+id/tvCategory"
+                    style="@style/common_card_text"
+                    android:layout_marginEnd="0dp"
+                    tools:text="Небольшая сеть магазинов"/>
+
+                <TextView
+                    style="@style/owned_business_page_subtext"
+                    android:text="@string/category"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginBottom="10dp"/>
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/open_new_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/stage_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/owned_businesses_page_common_card"
+            app:cardBackgroundColor="#F2F5FE">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon"
+                    style="@style/common_card_icon"
+                    android:background="@drawable/ic_factory_building"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/open_new_title"
+                    style="@style/common_card_text"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintTop_toTopOf="@id/icon"
+                    app:layout_constraintBottom_toBottomOf="@id/icon"
+                    app:layout_constraintStart_toEndOf="@id/icon"
+                    android:text="@string/opening_of_new_workshops"/>
+
+                <TextView
+                    android:id="@+id/tvToLevelUp"
+                    style="@style/common_card_text"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="21dp"
+                    app:layout_constraintTop_toBottomOf="@id/open_new_title"
+
+                    app:layout_constraintStart_toStartOf="@id/icon"
+                    tools:text="$ 3 228,10"/>
+
+                <TextView
+                    android:id="@+id/tv_req_inv"
+                    style="@style/owned_business_page_subtext"
+                    android:text="@string/required_investments"
+                    app:layout_constraintStart_toStartOf="@id/tvToLevelUp"
+                    app:layout_constraintTop_toBottomOf="@id/tvToLevelUp"/>
+
+                <LinearLayout
+                    android:id="@+id/ll_profit_grow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@id/tv_req_inv"
+                    app:layout_constraintStart_toStartOf="@id/tv_req_inv">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:src="@drawable/ic_up_arrow_green"/>
+
+                    <TextView
+                        android:id="@+id/tvProfitGrow"
+                        style="@style/common_card_text"
+                        android:layout_marginTop="0dp"
+                        android:layout_marginStart="0dp"
+                        app:layout_constraintTop_toBottomOf="@id/open_new_title"
+
+                        app:layout_constraintStart_toStartOf="@id/icon"
+                        tools:text="$ 87,88"/>
+
+                </LinearLayout>
+
+                <TextView
+                    style="@style/owned_business_page_subtext"
+                    android:text="@string/expected_profit_growth"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintStart_toStartOf="@id/ll_profit_grow"
+                    app:layout_constraintTop_toBottomOf="@id/ll_profit_grow"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/expansion_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/stage_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/owned_businesses_page_common_card"
+            app:cardBackgroundColor="#F2F5FE"
+            android:visibility="gone">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/icon2"
+                    style="@style/common_card_icon"
+                    android:background="@drawable/ic_factory_building"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <TextView
+                    android:id="@+id/open_new_title2"
+                    style="@style/common_card_text"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="0dp"
+                    app:layout_constraintTop_toTopOf="@id/icon2"
+                    app:layout_constraintBottom_toBottomOf="@id/icon2"
+                    app:layout_constraintStart_toEndOf="@id/icon2"
+                    android:text="@string/expansion_in_progress"/>
+
+                <TextView
+                    android:id="@+id/tvTimeLeft"
+                    style="@style/common_card_text"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginTop="21dp"
+                    app:layout_constraintTop_toBottomOf="@id/open_new_title2"
+
+                    app:layout_constraintStart_toStartOf="@id/icon2"
+                    android:text="@string/remain_time"/>
+
+                <TextView
+                    android:id="@+id/tv_req_inv2"
+                    style="@style/owned_business_page_subtext"
+                    android:layout_marginBottom="10dp"
+                    android:text="@string/time_left"
+                    app:layout_constraintStart_toStartOf="@id/tvTimeLeft"
+                    app:layout_constraintTop_toBottomOf="@id/tvTimeLeft"
+                    app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/achieved_max_stage_card"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/stage_card"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp"
+            style="@style/owned_businesses_page_common_card"
+            app:cardBackgroundColor="#F2F5FE"
+            android:visibility="gone">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/open_new_title3"
+                    style="@style/common_card_text"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:text="@string/max_stage_achieved"/>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <Button
+            android:id="@+id/btnLevelUp"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/open_new_card"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#40739E"
+            app:cornerRadius="10dp"
+            android:text="@string/open_new_workshops"
+            android:textAllCaps="false"
+            android:letterSpacing="0"
+            android:fontFamily="@font/inter_semibold"/>
+
+        <Button
+            android:id="@+id/btnSkipLevelUp"
+            android:layout_width="335dp"
+            android:layout_height="50dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/expansion_card"
+            android:layout_marginTop="10dp"
+            android:backgroundTint="#40739E"
+            app:cornerRadius="10dp"
+            android:text="@string/skip_expansion_time"
+            android:textAllCaps="false"
+            android:letterSpacing="0"
+            android:fontFamily="@font/inter_regular"
+            app:icon="@drawable/ic_skip_time"
+            android:visibility="invisible"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
